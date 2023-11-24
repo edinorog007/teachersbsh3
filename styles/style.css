@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter-Regular,sans-serif;
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../fonts/Inter-Regular.otf");
+}
+
+body {
+    background-color: #8DA5BD;
+}
+
+.container {
+    max-width: 1462px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 0px 0 0px 0;
+}
+
+.header .container {
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / auto 1fr auto;
+}
+
+.button1 {
+    width: 180px;
+    height: 68px;
+    border-radius: 12px;
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / auto auto;
+    justify-content: space-evenly;
+    background-color: #F29A77;
+}
+
+.back {
+    font-size: 24px;
+    max-width: 75px;
+    max-height: 28px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.teachers {
+    margin-top: 75px;
+    margin-bottom: -28px;
+}
+
+.teachers-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.cards {
+    display: flex;
+    margin: 0 -25px;
+}
+
+.card {
+    margin: 28px 25px;
+}
+
+.teacher-info {
+    width: 400px;
+    height: 450px;
+    box-sizing: border-box;
+    background-color: #CBCF9D;
+    border-radius: 12px;
+    padding: 38px 13px 16px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teacher-info.background {
+    background-color: #FACF8E;
+}
+
+.teacher-info-text {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.teacher-info-button {
+    text-align: center;
+    font-size: 24px;
+    border-radius: 12px;
+    background-color: #8DA5BD;
+    border: 1px solid #000;
+    padding: 10px 21px;
+    box-sizing: border-box;
+    width: 192px;
+    height: 47px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.teacher-info-button:hover {
+    background-color: #5a6e81;
+    color:#fff ;
+}
+
+.teacher-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ba;
+    opacity: 0;
+    transition: opacity .6s linear;
+}
+
+.teacher-modal-block {
+    position: absolute;
+    padding: 50px 31px 60px 50px;
+    background-color: #fff;
+    width: 1024px;
+    height: 768px;
+    top: calc(50% - 384px);
+    left: calc(50% - 512px);
+    display: grid;
+    grid-template: auto auto / 371px 542px ;
+    grid-column-gap: 37px;
+    grid-row-gap: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-image: url(../images/teacher-modal-background.png);
+}
+
+.teacher-modal-info {
+    grid-column: span 2;
+}
+
+.teacher-modal-title {
+    font-size: 36px;
+}
+
+.teacher-modal-text {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
